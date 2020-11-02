@@ -1,3 +1,12 @@
+// 한줄 주석 : SCSS만을 위한 주석
+
+/*
+여러줄 주석 : CSS에도 주석으로 출력
+*/
+
+// ===== ===== ===== ===== =====
+// 간단한 SCSS 테스트
+/*
 $color: #999;
 $color2: blue;
 
@@ -5,9 +14,50 @@ body {
     background: $color;
     color: $color2;
 }
-
-// 한줄 주석 : SCSS를 위한 주석
-
-/*
-여러줄 주석 : CSS에서도 주석으로 남음
 */
+
+// ===== ===== ===== ===== =====
+// 변수는 영문, 영문+숫자, 영문-_숫자, 대소문자 가능
+
+$gray: #c9c9c9;
+$white: #fff;
+$blue: blue;
+$red: red;
+$fs30: 30px;
+
+.btn1 {
+    display: block;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    font-size: $fs30;
+    color: $gray;
+    background: $white;
+    border: 1px solid $gray;
+    text-align: center;
+    
+    &:hover {
+        background: $gray;
+        color: $white;
+    }
+}
+
+.btn2 {
+    display: block;
+    padding: 10px;
+    font-size: $fs30;
+    border: 1px solid $red;
+    background: $blue;
+    color: $gray;
+}
+
+
+
+
+
+
+
+
+
+
+
